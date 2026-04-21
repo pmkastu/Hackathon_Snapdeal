@@ -1,0 +1,74 @@
+[
+  {
+    "category": "Headphones",
+    "rank": 1,
+    "name": "80 Hours Playtime Wireless Neckband headphones Earphone",
+    "price": "Rs. 387"
+  },
+  {
+    "category": "Headphones",
+    "rank": 2,
+    "name": "M19 Bluetooth 5.1 Earbuds in-Ear TWS Stereo Headphones with Smart LED",
+    "price": "Rs. 313"
+  },
+  {
+    "category": "Headphones",
+    "rank": 3,
+    "name": "U7 Tws Headphone, 30 hours of Playback and Deep Bass, Gaming, Fast Charging & Low Latency IPX7 (Water Resistant)",
+    "price": "Rs. 370"
+  },
+  {
+    "category": "Shoes",
+    "rank": 1,
+    "name": "Xtoon Grey Men's Outdoor Shoes",
+    "price": "Rs. 453"
+  },
+  {
+    "category": "Shoes",
+    "rank": 2,
+    "name": "Xtoon White Men's Outdoor Shoes",
+    "price": "Rs. 454"
+  },
+  {
+    "category": "Shoes",
+    "rank": 3,
+    "name": "DUCKINS Cosco White White Men's Sports Running Shoes",
+    "price": "Rs. 412"
+  },
+  {
+    "category": "Watch",
+    "rank": 1,
+    "name": "Versatile - Silver Stainless Steel Analog Men's Watch",
+    "price": "Rs. 292"
+  },
+  {
+    "category": "Watch",
+    "rank": 2,
+    "name": "Mikado - Black Silicon Analog Men's Watch",
+    "price": "Rs. 299"
+  },
+  {
+    "category": "Watch",
+    "rank": 3,
+    "name": "Mikado - Blue Silicon Analog Men's Watch",
+    "price": "Rs. 299"
+  },
+  {
+    "category": "Bottle",
+    "rank": 1,
+    "name": "OHHO Gold Stainless Steel Analog Men's Watch",
+    "price": "Rs. 588"
+  },
+  {
+    "category": "Bottle",
+    "rank": 2,
+    "name": "OHHO Gold Stainless Steel Analog Men's Watch",
+    "price": "Rs. 588"
+  },
+  {
+    "category": "Bottle",
+    "rank": 3,
+    "name": "OHHO Black Stainless Steel Analog Men's Watch",
+    "price": "Rs. 588"
+  }
+]
