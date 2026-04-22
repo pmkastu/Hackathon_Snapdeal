@@ -10,7 +10,7 @@ import { PaymentPage } from '../pages/PaymentPage';
 import { AssertCartSum, handleCart, loginPopUp, logoutDropdown, removeitemsFromCart} from '../helper';
 
 test.beforeEach(async({page})=>{
-  const phone = 7588631837;
+  const phone = 9119479982;
   await loginPopUp(page,phone);
 })
 
@@ -83,7 +83,9 @@ test.beforeEach(async({page})=>{
   await payment.closePopUp()
 
   await removeitemsFromCart(page);
-
-  await logoutDropdown(page)
   
 });
+
+test.afterEach(async({page}) => {
+   await logoutDropdown(page)
+})

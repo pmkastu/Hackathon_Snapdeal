@@ -8,14 +8,26 @@
   {
     "category": "Headphones",
     "rank": 2,
-    "name": "M19 Bluetooth 5.1 Earbuds in-Ear TWS Stereo Headphones with Smart LED",
-    "price": "Rs. 331"
+    "name": "Neo BT 700 Bluetooth True Wireless (TWS) On Ear 5 Hours Playback Active Noise cancellation IPX4(Splash & Sweat Proof) Assorted",
+    "price": "Rs. 280"
   },
   {
     "category": "Headphones",
     "rank": 3,
-    "name": "Neo P9 Bluetooth Bluetooth Headphone On Ear 2 Hours Playback Active Noise cancellation IPX4(Splash & Sweat Proof) Black",
-    "price": "Rs. 378"
+    "name": "STONX p47 Bluetooth Bluetooth Headphone Over Ear 4 Hours Playback Active Noise cancellation IPX4(Splash & Sweat Proof) Multicolor",
+    "price": "Rs. 485"
+  },
+  {
+    "category": "Headphones",
+    "rank": 4,
+    "name": "Neo SH 12 On Ear Bluetooth Headphone 8 Hours Playback IPX4(Splash & Sweat Proof) Active Noise cancellation -Bluetooth Black",
+    "price": "Rs. 476"
+  },
+  {
+    "category": "Headphones",
+    "rank": 5,
+    "name": "Tws Bluetooth Headphone, Fast Charging, 3D Sound, Ultra Low Latency, 30 Hours Playtime + Protective Case",
+    "price": "Rs. 483"
   },
   {
     "category": "Shoes",
@@ -26,14 +38,26 @@
   {
     "category": "Shoes",
     "rank": 2,
-    "name": "hotstyle BG Grey Men's Lifestyle Shoes",
-    "price": "Rs. 339"
+    "name": "Xtoon White Men's Outdoor Shoes",
+    "price": "Rs. 499"
   },
   {
     "category": "Shoes",
     "rank": 3,
-    "name": "Campus HURRICANE White Men's Sports Running Shoes",
-    "price": "Rs. 820"
+    "name": "hotstyle Gray Men's Sports Running Shoes",
+    "price": "Rs. 499"
+  },
+  {
+    "category": "Shoes",
+    "rank": 4,
+    "name": "DUCKINS Beige Men's Sports Running Shoes",
+    "price": "Rs. 477"
+  },
+  {
+    "category": "Shoes",
+    "rank": 5,
+    "name": "Aaravin's Black Men's Korean Shoes",
+    "price": "Rs. 581"
   },
   {
     "category": "Watch",
@@ -54,6 +78,18 @@
     "price": "Rs. 320"
   },
   {
+    "category": "Watch",
+    "rank": 4,
+    "name": "Versatile - Blue Silicon Analog Men's Watch",
+    "price": "Rs. 320"
+  },
+  {
+    "category": "Watch",
+    "rank": 5,
+    "name": "HMTr Gold Stainless Steel Analog Men's Watch",
+    "price": "Rs. 358"
+  },
+  {
     "category": "Bottle",
     "rank": 1,
     "name": "OHHO Gold Stainless Steel Analog Men's Watch",
@@ -68,6 +104,18 @@
   {
     "category": "Bottle",
     "rank": 3,
+    "name": "OHHO Black Stainless Steel Analog Men's Watch",
+    "price": "Rs. 608"
+  },
+  {
+    "category": "Bottle",
+    "rank": 4,
+    "name": "OHHO Gold Stainless Steel Analog Men's Watch",
+    "price": "Rs. 608"
+  },
+  {
+    "category": "Bottle",
+    "rank": 5,
     "name": "OHHO Black Stainless Steel Analog Men's Watch",
     "price": "Rs. 608"
   }

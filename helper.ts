@@ -23,8 +23,6 @@ export async function AssertCartSum(page:Page){
 
     await page.locator("[class='cartContainer col-xs-11 reset-padding']").click();
 
-    await page.pause()
-
     await page.waitForTimeout(3000);
 
     await page.locator('#rzp-cart-button').click()
@@ -37,7 +35,7 @@ export async function AssertCartSum(page:Page){
 
     let total = 0;
     for(let i=0; i<getCartItems.length; i++){
-        let price = getCartItems[i];
+        let price = getCartItems[i]; 
 
        let np = price.split(" ")[1]
 
@@ -46,7 +44,7 @@ export async function AssertCartSum(page:Page){
        for(let i=0; i<numArr.length; i++){
             newPrice += numArr[i];
        }
-       let nPrice = parseInt(newPrice);
+       let nPrice = parseInt(newPrice); 
        if(isNaN(nPrice)){
             total += 0;
        } else {
@@ -57,7 +55,7 @@ export async function AssertCartSum(page:Page){
     // await page.pause()
 
     const finalprice = total.toLocaleString('en-US');
-    console.log(total.toLocaleString('en-US'));
+    console.log(finalprice);
     // console.log(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent())
     console.log('\u20B9'+finalprice)
     // expect(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent()).toEqual("\u20B9"+finalprice)
@@ -98,6 +96,6 @@ export async function loginPopUp(page:Page, phone:number){
 }
 
 export async function logoutDropdown(page:Page){
-    const logout = page.locator('[class*="accountInner"]').hover();
+    await page.locator('[class*="accountInner"]').hover();
     await page.getByRole('link', { name: 'Logout' }).click();
 }

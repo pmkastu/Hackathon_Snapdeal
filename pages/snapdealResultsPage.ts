@@ -63,7 +63,7 @@ export class SnapdealResultsPage {
   const productDetails: { name: string; price: string }[] = [];
 
   const count = await this.products.count();
-  const limit = Math.min(3, count);
+  const limit = Math.min(5, count);
 
   for (let i = 0; i < limit; i++) {
     const product = this.products.nth(i);
