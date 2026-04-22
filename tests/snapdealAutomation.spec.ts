@@ -83,7 +83,9 @@ test.beforeEach(async({page})=>{
   await payment.closePopUp()
 
   await removeitemsFromCart(page);
-
-  await logoutDropdown(page)
   
 });
+
+test.afterEach(async({page}) => {
+   await logoutDropdown(page)
+})

@@ -6,7 +6,7 @@ export class Headphones{
     readonly page:Page;
     readonly homePage: SnapdealHomePage;
     readonly resultsPage: SnapdealResultsPage;
-    readonly results: { category: string; rank: number; name: string; price: string }[];
+    readonly results: { category: string; rank: number; name: string; price: string }[] = [];
     readonly firstProduct: { category: string; name: string; price: string }[] = [];
     readonly headphns: {category: string; name: string; price: string }[] = [];
 
