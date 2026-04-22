@@ -10,7 +10,7 @@ import { PaymentPage } from '../pages/PaymentPage';
 import { AssertCartSum, handleCart, loginPopUp, logoutDropdown, removeitemsFromCart} from '../helper';
 
 test.beforeEach(async({page})=>{
-  const phone = 9119479982;
+  const phone = 8483862726;
   await loginPopUp(page,phone);
 })
 
@@ -68,7 +68,7 @@ test.beforeEach(async({page})=>{
   await AssertCartSum(page);
 
   const payment = new PaymentPage(page)
-  const name:string = "Prathamesh Milind kasture"
+  const name:string = "Khushbu Sheikh"
   const zip:string = "411051"
   const ad1:string = "Pune"
   const ad2:string = "sinhgad road"
