@@ -24,9 +24,7 @@ export class Headphones{
         await this.homePage.closeLoginPopupIfVisible();
         await this.homePage.searchProduct('Bluetooth headphone');
         await this.page.getByPlaceholder('Enter your pincode').fill('411051');
- 
         await this.page.getByRole('button', {name:'Check'}).click()
- 
         await this.resultsPage.sortBy('Popularity');
         await this.resultsPage.applyPriceRange('700', '1400');
         await this.resultsPage.filterByRating4Plus();

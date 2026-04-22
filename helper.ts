@@ -23,6 +23,8 @@ export async function AssertCartSum(page:Page){
 
     await page.locator("[class='cartContainer col-xs-11 reset-padding']").click();
 
+    await page.pause()
+
     await page.waitForTimeout(3000);
 
     await page.locator('#rzp-cart-button').click()
@@ -59,4 +61,43 @@ export async function AssertCartSum(page:Page){
     // console.log(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent())
     console.log('\u20B9'+finalprice)
     // expect(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent()).toEqual("\u20B9"+finalprice)
+}
+
+export async function removeitemsFromCart(page: Page) {
+    // Get count first
+    const cartItems = page.getByText('REMOVE', {exact:true});
+    let count = await cartItems.count();
+    console.log(count)
+    
+    while (count > 0) {
+        await page.waitForTimeout(2000);
+        // Always click the first visible REMOVE button
+        if(!(await cartItems.first().isVisible())){
+            break;
+        }
+        await cartItems.first().click();
+        // Wait for DOM to update after removal
+        await page.waitForLoadState('networkidle');
+        // Recount remaining items
+        count = await cartItems.count();
+    }
+
+    await page.locator('.icon-font-grey-size24 > .sd-icon').first().click();
+}
+
+export async function loginPopUp(page:Page, phone:number){
+    page.setDefaultTimeout(60000);
+
+    await page.goto("https://www.snapdeal.com");
+    await page.locator("[class*='dhQjLN']").nth(0).click();
+    await page.getByRole('button',{name:"LOGIN"}).click();
+    await page.getByPlaceholder("Mobile Number/ Email").pressSequentially(phone.toString(),{delay:150});
+    await page.getByRole('button',{name:"CONTINUE"}).click();
+    await page.waitForTimeout(25000);// waiting to fill otp
+    await page.getByRole('button',{name:'CONTINUE'}).click();
+}
+
+export async function logoutDropdown(page:Page){
+    const logout = page.locator('[class*="accountInner"]').hover();
+    await page.getByRole('link', { name: 'Logout' }).click();
 }
