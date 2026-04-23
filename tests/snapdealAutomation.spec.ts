@@ -1,5 +1,3 @@
-
-
 import { test } from '@playwright/test';
 import * as fs from 'fs';
 import { Headphones } from '../pages/HeadphonesPage';
