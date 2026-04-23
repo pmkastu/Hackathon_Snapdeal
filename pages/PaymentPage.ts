@@ -1,4 +1,4 @@
-import {Page, Locator} from '@playwright/test'
+import {Page, Locator, expect} from '@playwright/test'
 
 export class PaymentPage{
     readonly page:Page;
@@ -47,8 +47,9 @@ export class PaymentPage{
         await this.cardNumber.fill(cardnumber);
         await this.cardExpiry.pressSequentially(expiry,{delay:150});
         await this.cardCvv.fill(cvv);
-        const errormessage = this.frameLocator.getByText('Please enter a valid card');
-        // //await expect.soft(errormessage).toHaveText("Please enter a valid card");
+        const errormessage = await this.frameLocator.locator('[class="input-validation-error validation-error-one-click-checkout  svelte-1lowomx"]').textContent();
+        console.log(errormessage)
+        expect(errormessage).toEqual("Please enter a valid card number.");
     }
 
     async closePopUp(){

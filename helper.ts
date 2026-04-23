@@ -41,6 +41,7 @@ export async function AssertCartSum(page:Page){
 
        let newPrice = "";
        let numArr = np.split(',')
+       console.log(numArr)
        for(let i=0; i<numArr.length; i++){
             newPrice += numArr[i];
        }
@@ -56,9 +57,9 @@ export async function AssertCartSum(page:Page){
 
     const finalprice = total.toLocaleString('en-US');
     console.log(finalprice);
-    // console.log(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent())
+    console.log(await page.locator('iframe').first().contentFrame().getByTestId('cart-amount').textContent())
     console.log('\u20B9'+finalprice)
-    // expect(await page.locator('iframe').nth(1).contentFrame().getByTestId('cart-amount').textContent()).toEqual("\u20B9"+finalprice)
+    expect(await page.locator('iframe').first().contentFrame().getByTestId('cart-amount').textContent()).toEqual("\u20B9"+finalprice)
 }
 
 export async function removeitemsFromCart(page: Page) {
