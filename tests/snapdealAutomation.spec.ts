@@ -5,6 +5,7 @@ import { Shoes } from '../pages/ShoesPage';
 import { Watches } from '../pages/WatchsPage';
 import { Bottles } from '../pages/BottlesPage';
 import { PaymentPage } from '../pages/PaymentPage';
+import  addressData  from '../data/data.json';
 import { AssertCartSum, handleCart, loginPopUp, logoutDropdown, removeitemsFromCart} from '../helper';
 
 test.beforeEach(async({page})=>{
@@ -66,15 +67,15 @@ test.beforeEach(async({page})=>{
   await AssertCartSum(page);
 
   const payment = new PaymentPage(page)
-  const name:string = "Prathamesh Milind kasture"
-  const zip:string = "411051"
-  const ad1:string = "Pune"
-  const ad2:string = "sinhgad road"
+  const name:string = addressData.address.name
+  const zip:string = addressData.address.zip
+  const ad1:string = addressData.address.ad1
+  const ad2:string = addressData.address.ad2;
   await payment.addAddress(name, zip, ad1,ad2)
 
-  const cardNum:string = "1234567891234567";
-  const expiry:string = "1234"
-  const cvv:string = "123"
+  const cardNum:string = addressData.cardDetails.cardNum;
+  const expiry:string = addressData.cardDetails.expiry;
+  const cvv:string = addressData.cardDetails.cvv;
 
   await payment.enterCardDetailsAndAssert(cardNum, expiry, cvv)
 
