@@ -1,0 +1,17 @@
+{
+    "address" :{
+    "name": "Prathamesh Milind kasture",
+     "zip": "411051",
+     "ad1":"Pune",
+     "ad2": "sinhgad road"
+    },
+    "cardDetails":{
+        "cardNum":"1234567891234567",
+        "expiry":"1234",
+        "cvv":"123"
+    }
+}
+ 
+ 
+
+
