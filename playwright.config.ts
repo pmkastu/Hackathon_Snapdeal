@@ -1,11 +1,9 @@
-/// <reference types="node" />
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   timeout: 900000,
   testDir: './tests',
   fullyParallel: true,
-  forbidOnly: !!process.env.CI,
   retries: 2,
   workers: 1 ,
   reporter: [['html'],['allure-playwright']],
