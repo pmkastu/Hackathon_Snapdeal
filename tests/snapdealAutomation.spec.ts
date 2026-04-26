@@ -9,7 +9,8 @@ import  addressData  from '../data/data.json';
 import { AssertCartSum, handleCart, loginPopUp, logoutDropdown, removeitemsFromCart} from '../helper';
 
 test.beforeEach(async({page})=>{
-  const phone = 9119479982;
+  // const phone = 9398247156;
+  const phone = 8096613469;
   await loginPopUp(page,phone);
 })
 
