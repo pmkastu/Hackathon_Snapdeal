@@ -24,12 +24,6 @@ export class SnapdealHomePage {
     });
   }
 
-  async closeLoginPopupIfVisible(): Promise<void> {
-    if (await this.popupCloseBtn.isVisible({ timeout: 5000 }).catch(() => false)) {
-      await this.popupCloseBtn.click();
-    }
-  }
-
   async searchProduct(productName: string): Promise<void> {
     await this.searchBox.waitFor({ state: 'visible', timeout: 10000 });
     await this.searchBox.fill(productName);

@@ -21,7 +21,6 @@ export class Headphones{
 
     async headphones(){
         await this.homePage.openSnapdeal();
-        await this.homePage.closeLoginPopupIfVisible();
         await this.homePage.searchProduct('Bluetooth headphone');
         await this.page.getByPlaceholder('Enter your pincode').fill('411051');
         await this.page.getByRole('button', {name:'Check'}).click()

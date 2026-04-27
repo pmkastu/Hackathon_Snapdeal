@@ -22,8 +22,6 @@ export class Watches{
     async handleWatches(){
         await this.homePage.goToHomePage();
   await this.homePage.searchProduct('Watch');
-  //  await page.getByPlaceholder('Enter your pincode').fill('411051');
-  // await page.getByRole('button', {name:'Check'}).click()
   await this.resultsPage.sortByDiscount();
   await this.resultsPage.applyPriceRange('500', '1500');
   await this.resultsPage.filterByRating4Plus();
